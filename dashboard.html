@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BudgetApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <h1>BudgetApp</h1>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="budget.html">Summary</a></li>
+        </ul>
+    </nav>
+    
+    <div class="dashboard-grid">
+        <div class="summary-card">
+            <h2>Financial Overview</h2>
+            <div class="metric-grid">
+                <div class="metric-card income">
+                    <h3>Total Income</h3>
+                    <p id="totalIncome">$0.00</p>
+                </div>
+                <div class="metric-card expense">
+                    <h3>Total Expenses</h3>
+                    <p id="totalExpense">$0.00</p>
+                </div>
+                <div class="metric-card balance">
+                    <h3>Current Balance</h3>
+                    <p id="currentBalance">$0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

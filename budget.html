@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Summary | BudgetApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <h1>BudgetApp</h1>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="budget.html">Summary</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Budget Summary</h2>
+        
+        <div class="summary-cards">
+            <div class="summary-card total-income">
+                <h3>Total Income</h3>
+                <p id="summaryIncome">$0.00</p>
+            </div>
+            
+            <div class="summary-card total-expenses">
+                <h3>Total Expenses</h3>
+                <p id="summaryExpense">$0.00</p>
+            </div>
+            
+            <div class="summary-card balance">
+                <h3>Current Balance</h3>
+                <p id="summaryBalance">$0.00</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-row">
+                <div class="chart-card">
+                    <h3>Income Categories</h3>
+                    <div id="incomeChart" class="chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Expense Categories</h3>
+                    <div id="expenseChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="budget-progress">
+            <h3>Monthly Budget Progress</h3>
+            <div class="progress-bar">
+                <div id="budgetProgress" class="progress-fill"></div>
+            </div>
+            <p id="budgetPercentage">0%</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
